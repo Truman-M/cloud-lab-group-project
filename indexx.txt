@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRYT'S Dine | Fine Dining in the Heart of the City</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Aroma <span>Bistro</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Experience Exceptional Flavors</h1>
+            <p>Discover handcrafted dishes made with the finest ingredients in an unforgettable atmosphere.</p>
+            <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Featured Menu Section -->
+    <section id="menu" class="section">
+        <h2 class="section-title">Signature Dishes</h2>
+        <div class="menu-grid">
+            <!-- Menu Item 1 -->
+            <div class="menu-card">
+                <img src="images/pasta.jpg" alt="Fresh Homemade Fettuccine Pasta">
+                <div class="menu-card-content">
+                    <h3>Truffle Fettuccine</h3>
+                    <div class="price">$19</div>
+                    <p>Handmade fettuccine tossed in a rich truffle cream sauce with wild mushrooms, parmesan, and fresh thyme.</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-card">
+                <img src="images/burger.jpg" alt="Gourmet Beef Burger">
+                <div class="menu-card-content">
+                    <h3>The Classic BRYT'S Burger</h3>
+                    <div class="price">$17</div>
+                    <p>Premium Angus beef patty, aged cheddar, caramelized onions, house-made pickles on a toasted brioche bun.</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-card">
+                <img src="images/steak.jpg" alt="Grilled Ribeye Steak">
+                <div class="menu-card-content">
+                    <h3>Grilled Ribeye Steak</h3>
+                    <div class="price">$34</div>
+                    <p>12oz prime ribeye, herb compound butter, roasted garlic, seasonal vegetables, and red wine reduction.</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu-card">
+                <img src="images/salad.jpg" alt="Mediterranean Salad">
+                <div class="menu-card-content">
+                    <h3>Mediterranean Harvest Salad</h3>
+                    <div class="price">$15</div>
+                    <p>Fresh greens, cherry tomatoes, cucumber, Kalamata olives, feta, red onion, and lemon-oregano vinaigrette.</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="menu-card">
+                <img src="images/pizza.jpg" alt="Wood-Fired Margherita Pizza">
+                <div class="menu-card-content">
+                    <h3>Wood-Fired Margherita Pizza</h3>
+                    <div class="price">$16</div>
+                    <p>San Marzano tomatoes, fresh mozzarella, basil, extra virgin olive oil on our signature sourdough crust.</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="menu-card">
+                <img src="images/dessert.jpg" alt="Chocolate Lava Cake">
+                <div class="menu-card-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <div class="price">$12</div>
+                    <p>Warm Belgian chocolate cake with molten center, vanilla bean ice cream, fresh berries, and mint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Teaser -->
+    <section class="section" style="background-color: #f5f0e6; padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="about-grid" style="max-width: 1000px; margin: 0 auto;">
+            <div class="about-text">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">Our Passion for Food</h3>
+                <p>At BRYT'S, every dish tells a story. We source only the highest quality, seasonal ingredients from local farms and trusted suppliers to create memorable dining experiences.</p>
+                <p>Our chefs combine traditional techniques with modern creativity to bring you flavors that are both comforting and exciting.</p>
+                <a href="about.html" class="cta-button" style="margin-top: 1rem; display: inline-block;">Learn More About Us</a>
+            </div>
+            <div class="about-image">
+                <img src="images/chef.jpg" alt="Our Executive Chef" style="border-radius: 16px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Guests Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"The best dining experience we've had in years. The truffle pasta was absolutely divine and the service was impeccable."</p>
+                <div class="testimonial-author">— Sarah &amp; Michael Chen</div>
+            </div>
+            <div class="testimonial">
+                <p>"Every time we come here, the food is consistently outstanding. The steak is cooked to perfection every single time."</p>
+                <div class="testimonial-author">— David Rodriguez</div>
+            </div>
+            <div class="testimonial">
+                <p>"Beautiful ambiance and the chocolate lava cake is to die for. We celebrated our anniversary here and it was perfect."</p>
+                <div class="testimonial-author">— Emily Thompson</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Aroma Bistro. All rights reserved. | 123 Flavor Street, Foodie City, FC 12345</p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for the menu link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
